@@ -6,6 +6,7 @@ import { useEmployees } from "./hooks/useEmployees";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { DepartmentList } from "./components/departments/DepartmentList";
 import { useDepartments } from "./hooks/useDepartments";
+import { DepartmentForm } from "./components/departments/DepartmentForm";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <>
               <NavBar/>
               <DepartmentList departments={departments}/>
+              <DepartmentForm />
             </>
           }/>
         </Routes>
