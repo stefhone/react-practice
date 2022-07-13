@@ -1,0 +1,110 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com",
+      "employed": true
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com",
+      "employed": false
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@codingthesmartway.com",
+      "employed": true
+    },
+    {
+      "first_name": "bob",
+      "last_name": "smith",
+      "email": "email@citnow.com",
+      "employed": true,
+      "id": 4
+    },
+    {
+      "first_name": "ssdsds",
+      "last_name": "ssss",
+      "email": "stef@citnow.com",
+      "employed": true,
+      "id": 5
+    },
+    {
+      "first_name": "bob",
+      "last_name": "murphy",
+      "email": "bob@citnow.com",
+      "employed": true,
+      "id": 6
+    },
+    {
+      "first_name": "Adam",
+      "last_name": "Smith",
+      "email": "smith@citnow.com",
+      "employed": true,
+      "id": 7
+    },
+    {
+      "first_name": "bob",
+      "last_name": "bob",
+      "email": "bob@citnow.com",
+      "employed": true,
+      "id": 8
+    },
+    {
+      "first_name": "sue",
+      "last_name": "bob",
+      "email": "suebob@citnow.com",
+      "employed": true,
+      "id": 9
+    },
+    {
+      "first_name": "sue",
+      "last_name": "gray",
+      "email": "suegray@citnow.com",
+      "employed": true,
+      "id": 10
+    },
+    {
+      "first_name": "gray",
+      "last_name": "black",
+      "email": "grayblack@citnow.com",
+      "employed": true,
+      "id": 11
+    },
+    {
+      "first_name": "blue",
+      "last_name": "green",
+      "email": "bluegreen@citnow.ocm",
+      "employed": true,
+      "id": 12
+    },
+    {
+      "first_name": "dsfdsfs",
+      "last_name": "dfsdfsdf",
+      "email": "sdfsd@citnow.com",
+      "employed": true,
+      "id": 13
+    }
+  ],
+
+  "departments": [
+    {
+      "id": 1,
+      "title": "R S McColls",
+      "location": "Glasgow",
+      "employees": 1
+    },
+    {
+      "id": 2,
+      "title": "Nisa",
+      "location": "Edinburgh",
+      "employees": 2
+    }
+  ]
+}
