@@ -12,8 +12,14 @@ export const useDepartments = () => {
         });
     }, [])
 
+    const addDepartmentToState = (department) => {
+        const departmentsCopy = [...departments, department]
+        setDepartments(departmentsCopy)
+    }
+
     return {
-        departments
+        departments,
+        addDepartmentToState
     }
 
 }
