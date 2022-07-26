@@ -10,9 +10,9 @@ import { DepartmentForm } from "./components/departments/DepartmentForm";
 
 function App() {
 
-  const {employees,updateEmployeeStatus, addEmployeeToState} = useEmployees();
+  const {employees,updateEmployeeStatus, addEmployeeToState} = useEmployees();  
 
-  const {departments} = useDepartments();
+  const {departments, addDepartmentToState } = useDepartments();
 
   console.log(departments);
 
@@ -32,7 +32,7 @@ function App() {
             <>
               <NavBar/>
               <DepartmentList departments={departments}/>
-              <DepartmentForm />
+              <DepartmentForm addDepartmentToState={addDepartmentToState} />
             </>
           }/>
         </Routes>

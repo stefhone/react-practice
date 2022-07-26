@@ -1,4 +1,5 @@
-export const DepartmentForm = (params) => {
+import { postDepartment } from "../../helpers/departmentsService" 
+export const DepartmentForm = ({addDepartmentToState}) => {
     
     const initialFormValues = {
         title: "", location: "", employees: ""
