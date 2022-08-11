@@ -110,6 +110,42 @@
       "location": "test",
       "employees": "1",
       "id": 3
+    },
+    {
+      "title": "test",
+      "location": "test",
+      "employees": "1",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Mars Bar",
+      "category": "Sweets",
+      "price": 1.00,
+      "stock": 5
+    },
+    {
+      "id": 2,
+      "name": "Snickers",
+      "category": "Sweets",
+      "price": 0.50,
+      "stock": 3
+    },
+    {
+      "id": 3,
+      "name": "Pringles",
+      "category": "Crisps",
+      "price": 2.50,
+      "stock": 3
+    },
+    {
+      "id": 4,
+      "name": "Evening Times",
+      "category": "Newspaper",
+      "price": 1.00,
+      "stock": 10
     }
   ]
 }
