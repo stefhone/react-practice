@@ -92,7 +92,6 @@
       "id": 13
     }
   ],
-
   "departments": [
     {
       "id": 1,
@@ -105,6 +104,12 @@
       "title": "Nisa",
       "location": "Edinburgh",
       "employees": 2
+    },
+    {
+      "title": "test",
+      "location": "test",
+      "employees": "1",
+      "id": 3
     }
   ]
 }

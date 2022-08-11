@@ -14,7 +14,7 @@ function App() {
 
   const {departments, addDepartmentToState } = useDepartments();
 
-  console.log(departments);
+  // console.log(departments);
 
   return (
     <>
