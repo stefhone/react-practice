@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { DepartmentList } from "./components/departments/DepartmentList";
 import { useDepartments } from "./hooks/useDepartments";
 import { DepartmentForm } from "./components/departments/DepartmentForm";
+import { ProductList } from "./components/products/ProductList";
+import { useProducts } from "./hooks/useProducts";
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
 
   const {departments, addDepartmentToState } = useDepartments();
 
-  // console.log(departments);
+  const {products} = useProducts()
+
+  console.log({products});
 
   return (
     <>
@@ -33,6 +37,12 @@ function App() {
               <NavBar/>
               <DepartmentList departments={departments}/>
               <DepartmentForm addDepartmentToState={addDepartmentToState} />
+            </>
+          }/>
+          <Route path='/products' element={
+            <>
+              <NavBar/>
+              <ProductList products={products}/>
             </>
           }/>
         </Routes>
