@@ -8,6 +8,8 @@ export const EmployeeForm = ({addEmployeeToState}) => {
     const { formData, handleFormChange, handleFormSubmit } = useForm(addEmployeeToState, initialFormValues, postEmployee);
     const { first_name, last_name, email } = formData;
 
+    console.log({formData})
+
     return (
         <>
             <h2>This is add an Employee Form.</h2>

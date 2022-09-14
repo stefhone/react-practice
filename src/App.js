@@ -9,6 +9,7 @@ import { useDepartments } from "./hooks/useDepartments";
 import { DepartmentForm } from "./components/departments/DepartmentForm";
 import { ProductList } from "./components/products/ProductList";
 import { useProducts } from "./hooks/useProducts";
+import { ProductForm } from "./components/products/ProductForm";
 
 function App() {
 
@@ -17,8 +18,6 @@ function App() {
   const {departments, addDepartmentToState } = useDepartments();
 
   const {products} = useProducts()
-
-  console.log({products});
 
   return (
     <>
@@ -43,13 +42,11 @@ function App() {
             <>
               <NavBar/>
               <ProductList products={products}/>
+              <ProductForm />
             </>
           }/>
         </Routes>
       </Router>
-      {/* <h1>This is the app!</h1>
-      {employees && <EmployeeList employees={employees} updateEmployeeStatus={updateEmployeeStatus}/>}
-      <EmployeeForm addEmployeeToState={addEmployeeToState} /> */}
     </>
   );
 }
