@@ -17,7 +17,7 @@ function App() {
 
   const {departments, addDepartmentToState } = useDepartments();
 
-  const {products} = useProducts()
+  const {products, addProductToState} = useProducts()
 
   return (
     <>
@@ -42,7 +42,7 @@ function App() {
             <>
               <NavBar/>
               <ProductList products={products}/>
-              <ProductForm />
+              <ProductForm addProductToState={addProductToState}/>
             </>
           }/>
         </Routes>
