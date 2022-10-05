@@ -10,6 +10,7 @@ import { DepartmentForm } from "./components/departments/DepartmentForm";
 import { ProductList } from "./components/products/ProductList";
 import { useProducts } from "./hooks/useProducts";
 import { ProductForm } from "./components/products/ProductForm";
+import { ProductsFilter } from "./components/products/ProductsFilter";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
 
   const {departments, addDepartmentToState } = useDepartments();
 
-  const {products, addProductToState} = useProducts()
+  const {products, addProductToState, filterProducts} = useProducts()
 
   return (
     <>
@@ -41,6 +42,7 @@ function App() {
           <Route path='/products' element={
             <>
               <NavBar/>
+              <ProductsFilter filterProducts={filterProducts}/>
               <ProductList products={products}/>
               <ProductForm addProductToState={addProductToState}/>
             </>

@@ -23,6 +23,24 @@ export const useProducts = (params) => {
         setProducts(copyProducts)
     }
 
+    const filterProducts = (name) => {
+        console.log('Name in useProducts:', name)
+
+        // 1. loop through a copied list of products
+        // const copyProductList = [...products]
+        // 2. within the loop, compare name with name on each product
+        // EXAMPLE FILTER
+        // const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+        // const result = words.filter(word => word.length > 6);
+        // console.log(result);
+
+        const filteredProducts = products.filter(product => product.name.toLowerCase().includes(name.toLowerCase())) 
+        // 3. set filtered list of products in the state
+        console.log({filteredProducts})
+        setProducts(filteredProducts)
+    }
+    
+
     // return products
-    return { products, addProductToState }
+    return { products, addProductToState, filterProducts }
 }
