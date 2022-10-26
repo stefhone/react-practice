@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-export const ProductsFilter = ({filterProducts}) => {
+export const ProductsFilter = ({filterProducts, clearFilter}) => {
     
-    const initialFormFilterValues = {name: ""}
+    const initialFormFilterValues = {name: "", category: ""}
 
     const [filterData, setFilterData] = useState(initialFormFilterValues);
 
@@ -15,7 +15,14 @@ export const ProductsFilter = ({filterProducts}) => {
 
         setFilterData(filterDataCopy)
 
-        filterProducts(e.target.value)
+        console.log({filterDataCopy})
+
+        filterProducts(filterDataCopy)
+    }
+
+    const handlClearFilter = (params) => {
+        setFilterData(initialFormFilterValues)
+        clearFilter()
     }
 
     return (
@@ -24,7 +31,10 @@ export const ProductsFilter = ({filterProducts}) => {
             <form action="">
                 <label>Filter by Name</label>
                 <input type="text" value={filterData.name} name="name" onChange={handleFilterFormChange}/>
+                <label>Filter by Category</label>
+                <input type="text" value={filterData.category} name="category" onChange={handleFilterFormChange}/>
             </form>
+            <button onClick={handlClearFilter}>Clear Filter</button>
         </>
     )
 }

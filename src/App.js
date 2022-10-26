@@ -18,7 +18,7 @@ function App() {
 
   const {departments, addDepartmentToState } = useDepartments();
 
-  const {products, addProductToState, filterProducts} = useProducts()
+  const {products, addProductToState, filterProducts, clearFilter} = useProducts()
 
   return (
     <>
@@ -42,7 +42,7 @@ function App() {
           <Route path='/products' element={
             <>
               <NavBar/>
-              <ProductsFilter filterProducts={filterProducts}/>
+              <ProductsFilter filterProducts={filterProducts} clearFilter={clearFilter}/>
               <ProductList products={products}/>
               <ProductForm addProductToState={addProductToState}/>
             </>

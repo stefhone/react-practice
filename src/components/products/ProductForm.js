@@ -11,8 +11,6 @@ export const ProductForm = ({addProductToState}) => {
 
     const {name, category, price, stock} = formData
 
-    console.log({formData})
-
     return (
         <>
             <h2>Product Form</h2>
